@@ -163,7 +163,7 @@ function checaValidadeInscricaoLabenu() {
   const validade = (idade === "sim") && (ensino === "sim") && (horario === "sim")
   console.log (validade)
   return (validade)
-
+// Ihull consegui :D
 }
 
 
