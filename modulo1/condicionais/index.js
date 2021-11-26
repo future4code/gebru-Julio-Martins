@@ -176,4 +176,6 @@ console.log(`Quantidade de Ingressos: ${quantidadeIngressos}`)
 console.log('---Valores---')
 console.log(`Valor do ingresso: ${moeda} ${precoUnitario} ${ingressoIn}`)
 console.log(`Valor total: ${moeda} ${totalIngressos}`)
-//Att
+
+
+// Nova att
