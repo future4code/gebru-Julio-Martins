@@ -174,8 +174,8 @@ console.log(`Etapa do jogo: ${etapaDoJogo}`)
 console.log(`Categoria: ${categoriaJogo}`)
 console.log(`Quantidade de Ingressos: ${quantidadeIngressos}`)
 console.log('---Valores---')
-console.log(`Valor do ingresso: ${moeda} ${precoUnitario} ${ingressoIn}`)
+console.log(`Valor do ingresso: ${moeda} ${precoUnitario}  ${ingressoIn}`)
 console.log(`Valor total: ${moeda} ${totalIngressos}`)
 
 
-// Nova att
+// Demonho que não sobe minha att
