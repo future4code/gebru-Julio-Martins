@@ -147,15 +147,15 @@ var ingressoIn
 if (tipoJogoInDo === "IN") {
     ingressoIn = precoUnitario * dolar
     totalIngressos = (precoUnitario * dolar) * quantidadeIngressos
-} else if (tipoJogoInDo === "DO"){
-totalIngressos = (precoUnitario * quantidadeIngressos)
+} else if (tipoJogoInDo === "DO") {
+    totalIngressos = (precoUnitario * quantidadeIngressos)
 }
 
 var moeda
 if (tipoJogoInDo === "IN") {
     moeda = "U$"
-} else if (tipoJogoInDo === "DO"){
-moeda = "R$"
+} else if (tipoJogoInDo === "DO") {
+    moeda = "R$"
 }
 
 var etapaDoJogo
@@ -176,3 +176,4 @@ console.log(`Quantidade de Ingressos: ${quantidadeIngressos}`)
 console.log('---Valores---')
 console.log(`Valor do ingresso: ${moeda} ${precoUnitario} ${ingressoIn}`)
 console.log(`Valor total: ${moeda} ${totalIngressos}`)
+//Att
