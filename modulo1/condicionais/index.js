@@ -74,8 +74,105 @@ A:*/
 
 2-*/
 const nome = prompt("Qual o seu nome completo?")
-const tipo = prompt("Qual o tipo de jogo: IN ou DO").toUpperCase()
-const etapa = prompt(" Qual a etapa: SF , DT ou FI").toUpperCase()
-const categoria = Number(prompt("Qual a categoria: 1, 2, 3, 4"))
-const quantIngressos = Number(prompt("Quantos ingressos?"))
+const tipoJogoInDo = prompt("Qual o tipo de jogo: IN ou DO").toUpperCase()
+const etapaJogo = prompt(" Qual a etapa: SF , DT ou FI").toUpperCase()
+const categoriaJogo = Number(prompt("Qual a categoria: 1, 2, 3, 4"))
+const quantidadeIngressos = Number(prompt("Quantos ingressos?"))
 
+let precoUnitario
+switch (etapaJogo) {
+    case "SF":
+        switch (categoriaJogo) {
+            case 1:
+                precoUnitario = 1320
+                break;
+            case 2:
+                precoUnitario = 880
+                break;
+            case 3:
+                precoUnitario = 550
+                break;
+            case 4:
+                precoUnitario = 220
+                break
+        }
+        break;
+}
+switch (etapaJogo) {
+    case "DT":
+        switch (categoriaJogo) {
+            case 1:
+                precoUnitario = 660
+                break;
+            case 2:
+                precoUnitario = 440
+                break;
+            case 3:
+                precoUnitario = 330
+                break;
+            case 4:
+                precoUnitario = 170
+                break
+        }
+        break;
+}
+switch (etapaJogo) {
+    case "FI":
+        switch (categoriaJogo) {
+            case 1:
+                precoUnitario = 1980
+                break;
+            case 2:
+                precoUnitario = 1320
+                break;
+            case 3:
+                precoUnitario = 880
+                break;
+            case 4:
+                precoUnitario = 330
+                break
+        }
+        break;
+}
+
+if (tipoJogoInDo === "IN") {
+    inDo = "Internacional"
+} else {
+    inDo = "Doméstico"
+}
+
+var dolar = 4.1
+var totalIngressos
+var ingressoIn
+if (tipoJogoInDo === "IN") {
+    ingressoIn = precoUnitario * dolar
+    totalIngressos = (precoUnitario * dolar) * quantidadeIngressos
+} else if (tipoJogoInDo === "DO"){
+totalIngressos = (precoUnitario * quantidadeIngressos)
+}
+
+var moeda
+if (tipoJogoInDo === "IN") {
+    moeda = "U$"
+} else if (tipoJogoInDo === "DO"){
+moeda = "R$"
+}
+
+var etapaDoJogo
+if (etapaJogo === "SF") {
+    etapaDoJogo = "Semi-Final"
+} else if (etapaJogo === "DT")
+    etapaDoJogo = "3° Lugar"
+else (etapaJogo === "FI")
+etapaDoJogo = "Final"
+
+
+console.log("---Dados da compra---")
+console.log(`Nome do cliente: ${nome}`)
+console.log(`Tipo de jogo: ${inDo}`)
+console.log(`Etapa do jogo: ${etapaDoJogo}`)
+console.log(`Categoria: ${categoriaJogo}`)
+console.log(`Quantidade de Ingressos: ${quantidadeIngressos}`)
+console.log('---Valores---')
+console.log(`Valor do ingresso: ${moeda} ${precoUnitario} ${ingressoIn}`)
+console.log(`Valor total: ${moeda} ${totalIngressos}`)
