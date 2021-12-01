@@ -29,9 +29,8 @@ A:
 
 /*2-
 A: */
-let array = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
-let valorMinimo = 0
-let valorMaximo = 1000
+// let array = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+
 // const questaoA = array => {
 //     for (let i = 0; i < array.length; i++) {
 //         console.log(array[i])
@@ -60,18 +59,30 @@ let valorMaximo = 1000
 // questaoC(array)
 
 //D:
-
+// let array2 = []
 // const questaoD = array => {
-//     for (let i = 0; i < array.length; i++) {
-//     console.log (`O elemento do índex é: ${array[i]}`)}
+//     for (let i = 0; i < array.length; i++){
+//         console.log(`O elemento do índex ${i} é: ${array[i]}`)
+//         array2.push(array[i])
+//     }    
 // }
 // questaoD (array)
-// let arrayD = []
-// const questaoD = (array) => {
 
-//     for (let i = 0; i < array.length; i++) {
-//         if ("O elemento do índex é:")
-//     console.log (`O elemento do índex é: ${array2[i]}`)}
+//E:
+// const questaoE1 = array => {
+//     return Math.max(...array);
 // }
-// questaoD (array)
-// save novoa
+// const questaoE2 = array =>{
+//     return Math.min(...array)
+// }
+// console.log (`O maior número é ${questaoE1(array)} e o menor é ${questaoE2(array)}`)
+
+
+/*DESAFIOS
+1-
+A: */
+// const brincadeira = () =>{
+/*Eu ia tentar até me explicaram +- comoera pra fazer
+mas ainda to muito perdido na questão de laço então 
+quando rever a aula e conseguir mexer direito eu tento. */
+
