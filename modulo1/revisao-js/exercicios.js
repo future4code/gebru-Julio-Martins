@@ -136,6 +136,12 @@ function retornaPessoasAutorizadas(pessoas) {
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
+    const pessoasNaoAutorizadas = []
+    for (pessoa of pessoas) {
+        if (pessoa.altura < 1.5 || pessoa.idade <= 14 || pessoa.idade >= 60) {
+            pessoasNaoAutorizadas.push(pessoa)
+        }
+    } return pessoasNaoAutorizadas
 
 }
 
