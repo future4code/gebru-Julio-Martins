@@ -27,10 +27,21 @@ function retornaArrayInvertido(array) {
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
     /*Metodo normal */
-    function compararNumeros(a, b) {
-        return a - b
+    // function compararNumeros(a, b) {
+    //     return a - b
+    // }
+    // return array.sort(compararNumeros)
+    /*Desafio */
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < (array.length - i - 1); j++) {
+            if (array[j] > array[j + 1]) {
+                var tmp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = tmp;
+            }
+        }
     }
-    return array.sort(compararNumeros)
+    return array
 
 }
 
