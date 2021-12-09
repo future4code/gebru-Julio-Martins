@@ -18,6 +18,11 @@ function retornaArrayInvertido(array) {
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
+    /*Metodo normal */
+    function compararNumeros(a, b) {
+        return a - b
+    }
+    return array.sort(compararNumeros)
 
 }
 
