@@ -36,6 +36,12 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
+    let arrayAoQuadrado = []
+    for (numero of array) {
+        if (numero % 2 === 0)
+            arrayAoQuadrado.push(numero * numero)
+    }
+    return arrayAoQuadrado
 
 }
 
