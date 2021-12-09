@@ -1,0 +1,7 @@
+1- Ter atenção no Enunciado, saber interpretar e encontrar informações.
+2- Retirar informações relevantes, usando-as para nomear variáveis, usar verbos para nomear as funções e verificar se tem alguma condição para a existência do código.
+3. Pensar nas entradas e saídas de como e quis serão os dados recebidos, qual e quais devem ser as possíveis repostas e criar uma função com as entradas e saídas já pensadas. 
+4.Fazer todo o planejamento visual criando exemplos, montando a logica do código e pensando nos cenários possíveis.
+5. Não ter medo de criar um código feio, coloque no papel todas as possíveis soluções pensadas e escolha as melhores soluções. Teste cada uma das soluções até obter uma resposta como foi pedido no enunciado. 
+6. Testar o código sempre prestando atenção aos erros, pois eles nos ajudarão a chegar na solução.  
+7. Refatorar: Pensar em nomes que facilite a leitura e compreensão dos códigos, separe as funções de cada elemento e comece com as etapas principais. Encontre uma maneira de melhorar a performance do código sem alterar sua funcionalidade. 
