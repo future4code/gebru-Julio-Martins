@@ -48,8 +48,16 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
     /*Metodo Normal  */
-    var pares = array.filter(par => (par % 2) === 0)
-    return pares
+    // var pares = array.filter(par => (par % 2) === 0)
+    // return pares
+
+    /*Desafio */
+    let arrayPares = []
+    for (numero of array) {
+        if (numero % 2 === 0)
+            arrayPares.push(numero)
+    }
+    return arrayPares
 
 }
 
