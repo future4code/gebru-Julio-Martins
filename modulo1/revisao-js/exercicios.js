@@ -28,6 +28,9 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
+    /*Metodo Normal  */
+    var pares = array.filter(par => (par % 2) === 0)
+    return pares
 
 }
 
