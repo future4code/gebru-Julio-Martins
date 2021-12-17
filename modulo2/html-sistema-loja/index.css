@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(226, 226, 226);
+}
+.titulo-center {
+  text-align: center;
+}
+.cabecalho {
+  background-color: rgb(41, 38, 38);
+  font-size: larger;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.sub-texto {
+  text-align: center;
+  font-size: 0.56cm;
+  color: rgb(34, 19, 19);
+  font-weight: bold;
+}
+.cartoes {
+  text-align: left;
+  font-weight: bold;
+  
+}
+.redes {
+  text-align: right;
+  font-weight: bold;
+
+}
+.centralizando-botoes {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  text-decoration: none
+  
+}
+button {
+  background-color: rgb(200, 200, 200);
+  font-weight: bold;
+  text-decoration: none;
+}
+.informacoes1 {
+  text-align: center;
+  font-style: italic;
+}
+.informacoes2 {
+  text-align: center;
+  background-color: rgb(41, 38, 38);
+  color: white;
+}
+.informacoes3 {
+  text-align: center;
+  font-style: italic;
+}
+footer {
+  border-top: 1px solid #333;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+
+}
+
+
