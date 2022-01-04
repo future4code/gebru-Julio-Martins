@@ -119,9 +119,13 @@ td button{
 .container-do-search {
     margin-top: 20px;
     height: 100px;
-    
+       
 }
-
+.borda-texto{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
 
 #back-button {
     background-color: white;
