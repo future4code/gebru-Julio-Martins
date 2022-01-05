@@ -75,6 +75,7 @@ div img {
 
 #container-de-descricao > ol {
   padding: 15px 0px;
+  
 }
 
 #container-para-comprar {
@@ -145,4 +146,8 @@ td button {
 td button:hover {
   color: white;
   background-color: #635a3d;
+}
+li {
+    display: list-item;
+    list-style-position: inside;
 }
