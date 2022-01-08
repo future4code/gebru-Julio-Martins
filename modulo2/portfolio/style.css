@@ -5,7 +5,8 @@
 }
 
 .redes{
-    text-align: center;
+  display: flex;
+    justify-content: center;
     margin-top: 200px;
 }
  .tamanho1 {
@@ -72,8 +73,8 @@
  .img-projetos{
       text-align: center;
  }
- .foto-perfil{
-   width: 20%;
+ .img-perfil{
+   text-align: center;
    
  }
  h2{
