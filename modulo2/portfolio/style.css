@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.redes{
+    text-align: center;
+    margin-top: 200px;
+}
+ .tamanho1 {
+   font-size: 20px;
+   text-align: center;
+   margin: 0px;
+ }
+ .tamanho2 {
+   font-size: 50px;
+   text-align: center;
+   margin: 0px;
+ }
+ .tamanho3 {
+   font-size: 20px;
+   text-align: center;
+   margin: 0px;
+ }
+ .teste-imagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 40%;
+ }
+ section:nth-of-type(1){
+    background-color: rgb(6, 6, 22)  ;
+    
+  }
+  section:nth-of-type(2){
+    background-color: rgb(12, 10, 22) ;
+    
+  }
+  section:nth-of-type(3){
+    background-color: rgb(6, 6, 22)  ;
+  }
+  section:nth-of-type(4){
+    background-color: rgb(12, 10, 22) ;
+  }
+  section:nth-of-type(5){
+    background-color: rgb(6, 6, 22)  ;
+  }
+  section:nth-of-type(6){
+    background-color: rgb(12, 10, 22) ;
+  }
+  .texto{
+    font-size: 20px;
+    color: white;
+    text-align: right;
+  }
+  .titulo-texto{
+    font-size: 40px;
+    color: white;
+    text-align: right;
+  }
+  .texto-educacao{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+ .titulo-educacao{
+   text-align: center;
+ }
+ .img-projetos{
+      text-align: center;
+ }
+ .foto-perfil{
+   width: 20%;
+   
+ }
+ h2{
+   font-size: 70px;
+   text-align: center;
+   color: rgb(255, 255, 255);
+ }
+ span{
+   color: rgb(78, 50, 205);
+ }
+ .texto-projeto{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+
+ }
