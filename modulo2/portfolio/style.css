@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+/* Modificações globais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+#link-topo{
+  text-decoration: none;
+  color: rgb(60, 23, 109);
+  font-size: 40px;
+  background: none;
+  padding: 1px;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+}
+::-webkit-scrollbar {
+ width: 12px;
+}
+
+::-webkit-scrollbar-track {
+ background-color: #0e091b;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #6610f2;
+ border-radius: 6px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* Cabeçalho */
+
+@media screen and (max-width:980px){
+  .menumobile{
+    display: block;
+    z-index: 999;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    border-bottom: 1px solid rgba(170, 147, 245, 0.2);
+    width: 100%;
+    max-width: 0px;
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+  .loguinho{
+    display: none ;
+  }
+}
+
+.logo-img{
+  display: flex;
+  padding-top: 2px;
+  position: fixed;
+  margin-left: -20%;
+  
+}
+.blackjack{
+  display: flex;
+  padding-top: -2%;
+  justify-content: center;
+}
+
+nav{
+  background: rgba 14, 9, 27, 0.6;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(170, 147, 245, 0.2);
+  z-index: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+nav ul li{
+  display: inline-flex;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: 25px 10px;
+  color: rgb(148, 148, 148);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  border-top: 20px;
+  transition: all 0.25 ease-in-out;  
+  padding-top: 20px;
+  
+}
+
+nav ul li a:hover{
+  border-bottom: 1px solid rgb(68, 0, 255);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+
+/*Estilização da pagina*/
+section:nth-of-type(1){
+  background-color: rgb(6, 6, 22);
+  width: 100%;
+min-height: 100vh;  
+  
+}
+section:nth-of-type(2){
+  background-color: rgb(12, 10, 22) ;
+  width: 100%;
+min-height: 100vh;
+  
+}
+section:nth-of-type(3){
+  background-color: rgb(6, 6, 22)  ;
+  width: 100%;
+min-height: 100vh;
+}
+section:nth-of-type(4){
+  background-color: rgb(12, 10, 22) ;
+  width: 100%;
+min-height: 100vh;
+}
+section:nth-of-type(5){
+  background-color: rgb(6, 6, 22)  ;
+  width: 100%;
+min-height: 100vh;
+}
+section:nth-of-type(6){
+  background-color: rgb(12, 10, 22) ;
+  width: 100%;
+min-height: 100vh;
+}
+/*Pagina inicial*/
+.img-perfil{
+  padding-top: 150px;
+  text-align: center; 
+}
+
+.redes{
+  display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+ .tamanho1 {
+   font-size: 20px;
+   text-align: center;
+   margin: 0px;
+ }
+ .tamanho2 {
+   font-size: 50px;
+   text-align: center;
+   margin: 0px;
+ }
+ .tamanho3 {
+   font-size: 20px;
+   text-align: center;
+   margin: 0px;
+ }
+ 
+  .texto{
+    font-size: 20px;
+    color: rgb(148, 148, 148);
+    text-align: left;
+    display: flex;
+    margin-left: 50%;
+  
+  }
+  .titulo-texto{
+    font-size: 80px;
+    color: rgb(148, 148, 148);
+    text-align: left;
+    display: flex;
+    margin-left: 50%;
+    margin-top: -20%;
+
+  }
+  .img-titulo-texto{
+    display: flex;
+    padding-top: 10%;
+  }
+  .cores-texto{
+    color: rgb(148, 148, 148);
+    padding-top: 7%;
+  }
+  /*Pagina Educação*/
+  .texto-educacao{
+    font-size: 20px;
+    color: rgb(148, 148, 148);
+    text-align: center;
+  }
+ .titulo-educacao{
+   text-align: center;
+ }
+ /*Pagina Projetos*/
+ .img-projetos{
+      text-align: center;
+ }
+ .texto-projeto{
+  
+  font-size: 20px;
+  color: rgb(148, 148, 148);
+  text-align: center;
+  padding-top: 3%;
+ 
+ }
+ /*Pagina Habilidades */
+ .img-habilidades{
+  margin-top: 5%;
+  text-align: left;
+}
+.texto-skills{
+  color: rgb(148, 148, 148);
+  display: flex;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: -20%;
+  font-size: 20px;
+}
+
+ /* Titulo e subtitulo das paginas*/
+ 
+ h2{
+   font-size: 70px;
+   text-align: center;
+   color: rgb(148, 148, 148);
+ }
+ span{
+   color: rgb(78, 50, 205);
+ }
+ 
+/* Contato*/
+ #titulo-contato{
+   padding-top: 20px;
+   
+   color: rgb(148, 148, 148);
+   font-size: 70px;
+   
+ }
+
+ #subtitulo-contato{
+   padding-top: 180px;
+  color: rgb(148, 148, 148);
+  font-size: 40px;
+ }
+
+ fieldset{
+   border: 0;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+ }
+ input,select,textarea,button{
+   border-radius: 5px;
+ }
+ .campo{
+   margin-bottom: 0em;
+ }
+ .campo label{
+   margin-bottom: 0.2em;
+   color: rgb(148, 148, 148);
+   display: block;
+ }
+ fieldset.grupo .campo{
+   float: left;
+   margin-right: 1em;
+ }
+ .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+padding: 0.2em;
+border: 1px solid rgb(115, 86, 248);
+box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+
+ }
+ .campo select option{
+   padding-right: 1em;
+ }
+ .campo input:focus, .campo select:focus, .campo textarea:focus{
+background:  #d9cff3;
+ }
+ .botao-contato{
+  font-size: 1.2em;
+  background: #3b1b85;
+  border: 0;
+  margin-bottom: 1em ;
+  color: rgb(148, 148, 148);
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px  rgba(0, 0, 0, 0.2 );
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5 );
+   transform: translate(-50%, -50%);
+   top: 90%;
+   left: 50%;
+   margin-left: 4.5%;
+ }
+ .botao-contato:hover{
+   background: #433a5d;
+   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2 ) ;
+   text-shadow: none;
+ }
+ #check{
+   display: inline-block;
+ }
+ #contato{
+   font-size: 1em;
+   color: rgb(148, 148, 148);
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   
+ }
+ /*Todas as paginas negrito*/
+ b{
+   font-size: 30px;
+ }
+
+ /* Rodapé*/
+ footer {
+   
+   display: flex;
+   flex-shrink: 0;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: rgb(12, 10, 22);
+  margin-top: 53.5px;
+  box-shadow: 0px 0px 10px rgb(51, 24, 168);
+  
+ }
+ .copyright{
+  
+   display: flex;
+   text-align: center;
+   margin-top: 10px;
+   font-size: 15px;
+   color: rgb(148, 148, 148);
+   padding-left: 4%;
+   
+ }
+ .whats{
+  
+   display: flex;
+   padding-left: 38%;
+   margin-top: 3px
+  
+ }
+ 
