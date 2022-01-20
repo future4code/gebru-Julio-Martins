@@ -1,5 +1,4 @@
 /*Modificações globais*/
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 *{
   padding: 0;
@@ -24,64 +23,49 @@
    /* Responsividade*/
 
    @media screen and (max-device-width: 480px){
-   
-   
-      #menu-videos{
+       /* Pesquisar*/
+       input{
+        display: flex;
+        width: 150px;
+        margin-left: 15%;
+        margin-top: -6px ;
+    }
+    .lupa-pesquisa{
+        margin-top: -6px;
+    }
+  
+       /*Transformando vídeos em coluna*/
+    #menu-videos{
         grid-template-columns: 1fr;
       }
-    
+      /* Arrumando proporção dos vídeos */
       .item-pagina{
-          display: flex;
-        width: 300px;
-       margin-left: 8%;
-       font-weight: bold;
-    
-    }
+        display: flex;
+      width: 300px;
+     font-weight: bold;
+  }
+  /* Footer responsivo */
+  .redes{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 100%;
+      position: relative;
       
-    input{
-        display: flex;
-        width: 60%;
-        height: 50%;
-        margin-left: 20%;
-        margin-top: 1%;
-    }
-
-    .lupa-pesquisa{
-        display: flex;
-        margin-top: 2220px;
-        
-    }
-   #texto{
-       display: flex;
-    
-   }
-    input::placeholder{
-        display: flex;
-        justify-content: center;
-        font-size: 90%;
-    } 
-  
-    .redes{
-        display: flex;
-        margin-left: 25%;
-        width: 0%;
-    }
-    
-    .texto-rodape{
-        display: none;
-    }
-
+  }
+  .texto-rodape {
+      display: none;
+  }
+ 
    }
 
-   
 /* Estilização do cabeçalho */
 header{
     background-color: rgba(255, 0, 0, 0.274);
     display: flex;
     justify-content: space-between;
     height: 5vh;
-    width: 100%;
-    padding: 3px 7px;
+    padding: 10px 18px;
     
 }
 .logo-img{
@@ -92,16 +76,15 @@ header{
 
 .pesquisa{
     display: flex;
-    width: 350px;
+    width: 400px;
     margin-left: 10px;
-    margin-top: 10px ;
-    
+    margin-top: 7.2px ;
     
 }
 
 
 #texto{
-    height: 80%;
+    height: 34px;
     float: left;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -112,10 +95,10 @@ header{
 }
 
 .lupa-pesquisa{
-     height: 59%;
+    width: 30px;
+    height: 28px;
     background-color: rgb(255, 255, 255);
     padding: 3px 7px;
-    margin-top: 1px;
     cursor: pointer;
     
 }
@@ -123,8 +106,6 @@ header{
 /* Estilização do background*/
 body{
     background-color: rgb(0, 0, 0);
-    width: 100%;
-    
     
 
     
