@@ -7,29 +7,119 @@ const MainContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  
+`
+
+const Inputs = styled.div`
+  margin: 30px 0;
+  font-size: 16px;
+  color: #5b5b5b;
+  border: 1px black solid;
+  padding: 10px 10px 10px 15px;
+  box-sizing: content-box;
+  z-index: 2;
+`
+
+const Input = styled.input`
+  margin: 0 10px;
+  font-size: 16px;
+  border: 1px black solid;
+  padding: 10px 10px 10px 15px;
+`
+
+const Button = styled.button`
+border-radius: 4px;
+font-family: Verdana;
+font-weight: bold;
+font-size: 13px;
+padding: 6px 10px;
 `
 
 class App extends React.Component {
+
+  state = {
+
+    posts: [
+      {
+        nomeUsuario: "Giovanni",
+        fotoUsuario: "https://picsum.photos/50/45",
+        fotoPost: "https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/219271829_4121105511311790_2946288656046682806_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHqPwTE6Uk4Z3fxaeCArXmcgE4lxByXOwqATiXEHJc7CnRSj0LRowC9CLYvyLO-9simkJBBnIdzxUUNn6Gxo-lg&_nc_ohc=NbQnIMT_2R8AX-JOgPl&tn=Vc0eT0yrjNfml0P-&_nc_ht=scontent.fcpq5-1.fna&oh=00_AT__-EwAAw2wkeZwiGOG0NNARZeWtE9x3kdJU5z8b43tZg&oe=6202B824",
+      },
+      {
+        nomeUsuario: "Carol",
+        fotoUsuario: "https://picsum.photos/50/30",
+        fotoPost: "https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/272978541_4781447638610904_3399941132710672377_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHbbdjuMDKLrSdT4p0D8cJ2lsv5cUErHzaWy_lxQSsfNioU56NIpSCGAtQ08FKKIrPcqFc72SInhgYp30eR7F7b&_nc_ohc=tJaOcRHYgsEAX_GlHHI&_nc_ht=scontent.fcpq5-1.fna&oh=00_AT-V2DfLN3p3THLDV4eJOkKh1utfrZ78pFR-NKldA4MbUA&oe=6202A313"
+      },
+      {
+        nomeUsuario: "Júlio Cesar",
+        fotoUsuario: "https://picsum.photos/50/20",
+        fotoPost: "https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/272904003_4781447635277571_5030014041142193748_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGlZ-4qCBUGschsWBxiL1KvIhEru9t3AroiESu723cCuqwgkdrXz0hTSATElyL0mMTYP0zfehhdVKaipkb4wTDH&_nc_ohc=mw-NM8546a0AX9VOAI9&_nc_ht=scontent.fcpq5-1.fna&oh=00_AT9cuoUFYENWGtxQALMZ3cX4vfYFIPTrjyJOeGlDcT8l8A&oe=62026D98"
+      },
+    ],
+    valorInputNomeUsuario: "",
+    valorInputFotoUsuario: "",
+    valorInputFotoPost: ""
+  }
+
+  adicionaUsuario = () => {
+    const novoUsuario = {
+      nomeUsuario: this.state.valorInputNomeUsuario,
+      fotoUsuario: this.state.valorInputFotoUsuario,
+      fotoPost: this.state.valorInputFotoPost
+    };
+
+    const novoUsuarios = [...this.state.posts, novoUsuario];
+
+    this.setState({ posts: novoUsuarios });
+    this.setState({valorInputNomeUsuario: "", valorInputFotoUsuario: "", valorInputFotoPost: ""})
+  };
+
+  onChangeInputNomeUsuario = (event) => {
+    this.setState({ valorInputNomeUsuario: event.target.value });
+  };
+
+  onChangeInputFotoUsuario = (event) => {
+    this.setState({ valorInputFotoUsuario: event.target.value });
+  };
+
+  onChangeInputFotoPost = (event) => {
+    this.setState({ valorInputFotoPost: event.target.value });
+  };
+
   render() {
+
+    const listaPosts = this.state.posts.map((post) => {
+      return (
+        <Post
+          nomeUsuario={post.nomeUsuario}
+          fotoUsuario={post.fotoUsuario}
+          fotoPost={post.fotoPost}
+        />
+      )
+    })
+
     return (
       <MainContainer>
-        <Post
-          nomeUsuario={'Júlio'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/273103726_4781438251945176_1825969709987412667_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeE9bmAU3kgan7xB7XnvJWhRl1RRJ1AcaY2XVFEnUBxpjTMNlN__pA0Jvm4V9e5_TbBdCbcVibgb8bL_1xI9rneS&_nc_ohc=Qcinm-RM_l0AX_Z5p28&_nc_ht=scontent.fcpq5-1.fna&oh=00_AT8_0ccRQyDSrx6xEfQ15RTQdNemRrD-kcEX9nlESr4e6w&oe=61FFDB21'}
-        />
+        {listaPosts}
 
-      <Post 
-nomeUsuario={'Giovanni'}
-fotoUsuario={'https://picsum.photos/id/1009/50/50'}
-fotoPost={'https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/246157490_4409267905828881_5810001421163251547_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFQjDsF6FZ6NMQb66fJJXymgWOl0VHVwXeBY6XRUdXBd2s-xNxcyxS9an7YsNId9Bn0LvUgUYRzcy1VhKIAe865&_nc_ohc=EsU0-NY-9YMAX-Iae3D&_nc_ht=scontent.fcpq5-1.fna&oh=00_AT_srPwE-u1RUH0X4S1-T1fEIcGAUMcaUDAJxbS0xI91LQ&oe=61FE6414'}
-      />
-
-<Post 
-nomeUsuario={'Carol'}
-fotoUsuario={'https://picsum.photos/id/1011/50/50'}
-fotoPost={'https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/272924292_4781428371946164_5901086221628268919_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeG-QhZArNhoweLlkGmgkDV0ZPh4KkPz7_pk-HgqQ_Pv-iAw6LCD8SpKR-zEj8dqaxGCfrtYwRqmlcQHtnpII4Lq&_nc_ohc=cztUvuMaVAwAX-PUenb&_nc_ht=scontent.fcpq5-1.fna&oh=00_AT_0b1_ZDpvsQNH1mx7cLc72HUqAs-sKpDP_9sPeGsA34w&oe=61FFC9C3'}
-      />
+        <Inputs>
+          <Input
+            value={this.state.valorInputNomeUsuario}
+            onChange={this.onChangeInputNomeUsuario}
+            placeholder={"Nome Usuário"}
+          />
+          <Input
+            value={this.state.valorInputFotoUsuario}
+            onChange={this.onChangeInputFotoUsuario}
+            placeholder={"Link Foto Usuário"}
+          />
+          <Input
+            value={this.state.valorInputFotoPost}
+            onChange={this.onChangeInputFotoPost}
+            placeholder={"Link Foto Post"}
+          />
+          <Button onClick={this.adicionaUsuario}>Adicionar</Button>
+        </Inputs>
       </MainContainer>
     );
   }
