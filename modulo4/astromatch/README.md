@@ -54,6 +54,7 @@ o projeto foi desenvolvido usando as seguintes tecnologias:
 - [Styled-Components](https://styled-components.com/docs)
 - [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
 - [SweetAlert2](https://sweetalert.js.org/guides/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
 
 ---
 
