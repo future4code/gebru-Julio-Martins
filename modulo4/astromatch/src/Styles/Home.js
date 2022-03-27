@@ -81,7 +81,7 @@ const ProfileDiv = styled.div`
         position: absolute;
         top: 290px;
         left: 15px;
-        color: #FFC0CB;
+        color: #FFF;
         font-size: 25px;
         font-weight: bold;
         text-shadow: 2px 2px 5px black, 3px 3px 5px black, 5px 5px 5px black;
@@ -92,7 +92,7 @@ const ProfileDiv = styled.div`
         margin-top: 360px;
         left: 15px;
         width: 90%;
-        color: #FFC0CB;
+        color: #FFF;
         font-size: 20px;
         text-shadow: 2px 2px 5px black, 3px 3px 5px black, 5px 5px 5px black;
         
