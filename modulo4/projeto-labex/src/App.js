@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from "react";
+import { Router } from "../src/routes/Router";
 
-function App() {
+
+const App = () =>{
+
   return (
     <div>
-
+      <Router/>
     </div>
-  );
+  )
 }
-
 export default App;
