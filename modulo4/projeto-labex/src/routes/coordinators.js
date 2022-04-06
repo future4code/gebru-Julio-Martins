@@ -17,13 +17,9 @@ export const goToTripDetailsPage = (navigate, id) =>{
     navigate(`/admin/trips/${id}`)
 }
 
-
-
 export const goToHomePage = (navigate) => {
     navigate("/")
 }
-
-
 export const goBack = (navigate) =>{
     navigate(-1)
 }

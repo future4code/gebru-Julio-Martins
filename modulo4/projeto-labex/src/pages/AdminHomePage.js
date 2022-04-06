@@ -1,15 +1,21 @@
 import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-import { goBack } from "../routes/coordinators";
-import { goToCreateTripPage } from "../routes/coordinators";
-import { goToHomePage } from "../routes/coordinators";
-import { goToTripDetailsPage } from "../routes/coordinators";
+import { goToCreateTripPage , goToHomePage, goToTripDetailsPage, goBack, goToLoginPage } from "../routes/coordinators";
 import { StyleAdmin } from "../style/StyleAdmin";
 import { EarthBackground } from "../style/StyleBackground";
+import { useProtectedPage } from "../hooks/ProtectPage";
+
 
 const AdminHomePage = () =>{
 
+    useProtectedPage()
+
+
   const navigate = useNavigate()
+  const goToHomePage= () => {
+    localStorage.removeItem("token")
+    goToLoginPage(navigate)
+  }
 
   return (
 

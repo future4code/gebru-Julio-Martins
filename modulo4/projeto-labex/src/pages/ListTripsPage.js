@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { goToApplicationFormPage } from "../routes/coordinators";
 import { StyleList } from "../style/StyleListTrip";
 import { EarthBackground } from "../style/StyleBackground";
+import { urlApi } from "../constants/BaseUrl";
 
 
 
