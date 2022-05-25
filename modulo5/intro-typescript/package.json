@@ -1,0 +1,21 @@
+{
+  "name": "intro-typescript",
+  "version": "1.0.0",
+  "description": "Aula - Introdução TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exer1": "tsc && node ./build/exer1.js",
+    "exer2": "tsc && node ./build/exer2.js",
+    "exer3": "tsc && node ./build/exer3.js",
+    "exer4": "tsc && node ./build/exer4.js",
+    "exer5": "tsc && node ./build/exer5.js"
+
+  },
+  "keywords": [],
+  "author": "Júlio Cesar",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.6.4"
+  }
+}
