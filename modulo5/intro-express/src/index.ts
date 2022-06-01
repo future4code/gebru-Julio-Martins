@@ -62,7 +62,7 @@ app.get("/users", (req: Request, res: Response) => {
 // Exercício 5
 
 type Post  = {
-    id: string | number 
+    id: number 
     title: string,
     body: string,
     userId: string | number 
@@ -73,19 +73,19 @@ type Post  = {
 
 const posts: Post [] = [
     {
-        id: "01",
+        id: 1,
         title: "To morrendo de sono",
         body: "Quero terminar e ir domir logo.",
         userId: 1
     },
     {
-        id: "02",
+        id: 2,
         title: "DORMINDO",
         body: "Já estou desmaiada",
         userId: 2
     },
     {
-        id: "03",
+        id: 3,
         title: "Mimindo",
         body: "Estou de barriguinha pra cima capotado",
         userId: 3
@@ -123,4 +123,32 @@ app.get("/posts/:userId", (req: Request, res: Response) => {
 // --------------------------------------------DESAFIOS---------------------------------------------------
 
 //Exercicio 9
-//A vou dormir depois tento fazer 
+app.delete('/posts/:postId', (req, res) => {
+    const postId = Number(req.params.postId)
+
+    if (!postId) {res.status(400).send('Erro, falta id do post')}
+
+    const newPosts: Post[] = posts.filter(post => {
+        if (post.id !== postId) {return post}
+    })
+    res.status(200).send(newPosts)
+})
+
+//Exercicio 10
+
+app.delete('/users/:id', (req, res) => {
+    const userIdDelete = Number(req.params.id)
+
+    if (!userIdDelete) {res.status(400).send('Erro, falta id do usuário')}
+
+    const newUsersArray: User[] = users.filter(user => {
+        if (user.id !== userIdDelete) {return user}
+    })
+    res.status(200).send(newUsersArray)
+})
+
+//Exercicio 10
+
+// Optei por deixar tanto o arquivo da documentação quanto o LINK. :D
+
+//https://documenter.getpostman.com/view/19734677/Uz5DrdLn
