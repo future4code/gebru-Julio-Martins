@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import { AddressInfo } from "net";
-import { usersTask } from './data';
 
 const app = express();
 
@@ -10,8 +9,6 @@ app.use(cors());
 app.listen(3003, () => {
     console.log("Server ta lisão")
 })
-
-// ENDPOINTS
 
 // Exercício 1
 app.get("/ping", (req, res) => {
