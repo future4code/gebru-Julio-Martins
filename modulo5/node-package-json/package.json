@@ -1,0 +1,13 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "description": "Exercicio de Node ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "clear && node ./index.js"
+  },
+  "keywords": [],
+  "author": "Júlio Cesar",
+  "license": "ISC"
+}
